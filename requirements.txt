@@ -49,7 +49,6 @@ numpy==2.1.3
 opt_einsum==3.4.0
 optree==0.14.1
 packaging==24.2
-pywin32==306
 pandas==2.2.3
 parso==0.8.4
 patsy==1.0.1
@@ -61,6 +60,7 @@ psutil==7.0.0
 pure_eval==0.2.3
 Pygments==2.19.1
 pyparsing==3.2.3
+pywin32==306  # ✅ Windows only
 python-dateutil==2.9.0.post0
 pytz==2025.2
 pyzmq==26.3.0
