@@ -8,7 +8,6 @@ def index():
     result = None
     chart_data = {}
 
-    # Get currency list
     res = requests.get("https://api.frankfurter.app/currencies")
     currencies = sorted(res.json().keys())
 
@@ -22,7 +21,7 @@ def index():
             response = requests.get(url).json()
             result = round(response['rates'][to_curr], 2)
 
-            # Optional: last 7 days chart
+    
             chart_url = f"https://api.frankfurter.app/2024-05-30..2024-06-05?from={from_curr}&to={to_curr}"
             chart_res = requests.get(chart_url).json()
             chart_data = {
